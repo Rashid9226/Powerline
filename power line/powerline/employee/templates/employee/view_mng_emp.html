@@ -1,0 +1,66 @@
+{% extends 'temp/admin.html' %}
+{% block base %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>manage employee</title>
+    <style>
+		body {
+			background-color: #f8f8f8;
+			font-family: Arial, sans-serif;
+		}
+		table {
+			border: 2px solid #ccc;
+			width: 70%;
+			margin: auto;
+			margin-top: 20px;
+			background-color: #fff;
+		}
+		th {
+			height: 50px;
+			text-align: center;
+			background-color: #007bff;
+			color: #fff;
+		}
+		td {
+			padding: 10px;
+			text-align: center;
+			border-bottom: 1px solid #ccc;
+		}
+
+	</style>
+</head>
+<body><center>
+{#    <h1 style="font-family: 'Microsoft Sans Serif'; color: darkslategrey;">View Employee</h1><br>#}
+	<table border="2" class="table">
+		<tr class="btn-primary" >
+			<th>Name</th>
+			<th>Age</th>
+			<th>Address</th>
+			<th>Department</th>
+			<th>Salary</th>
+			<th>Contact no</th>
+{#            <th>Organization</th>#}
+{#            <th></th>#}
+
+		</tr>
+        {% for i in c %}
+		<tr style="font-family: 'Apple Color Emoji';">
+			<td>{{ i.name }}</td>
+			<td>{{ i.age }}</td>
+			<td>{{ i.address }}</td>
+			<td>{{ i.department }}</td>
+			<td>{{ i.salary }}</td>
+			<td>{{ i.contact_no }}</td>
+{#            <td>{{ i.o.name }}</td>#}
+{#			<td><a href="/employee/rrr/{{ i.e_id }}"><button class="btn-danger"style="width: 100px; height: 30px;  border-radius: 10px;">reject</button></a></td>#}
+{#            <td><a href="/employee/zzz/{{ i.e_id }}"><button class="btn-primary" style="width: 100px; height: 30px; border-radius: 10px;">approve</button></a></td>#}
+        </tr>
+        {% endfor %}
+</table>
+</center>
+
+</body>
+</html>
+{% endblock %}

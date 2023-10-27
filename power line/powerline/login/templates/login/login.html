@@ -1,0 +1,60 @@
+{% extends 'temp/home.html' %}
+{% block base %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <style>
+     input[type="submit"] {
+			background-color: #1e7e34;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 10px;
+			font-size: 18px;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+			margin-top: 20px;
+			width: 100%;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #0f6674;
+			transform: translateY(-3px);
+		}
+
+    </style>
+</head>
+<body style="background-color:#f2f2f2;font-family: Arial, sans-serif;color: #333;margin: 0;padding: 0"><center>
+	<h1  style="font-family: 'Copperplate Gothic Bold';color: darkcyan;margin-top: 50px;margin-bottom: 30px;">LOGIN</h1>
+	<form method="post" style="border-radius: 20px;padding: 20px;background-color: #fff;box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);max-width: 500px;margin: auto">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td><div style="font-family: 'Times New Roman'; color: #005cbf;">USERNAME</div></td>
+				<td><input type="text" name="username" required="" placeholder="Enter your username..." style="width: 300px; padding: 5px; border-radius: 20px; border-color: #0f6674;"></td>
+			</tr>
+            <tr style="height: 15px;"></tr>
+			<tr>
+                <td><div style="font-family: 'Copperplate Gothic Bold'; color: #005cbf;">PASSWORD</div></td>
+				<td><input type="password" name="pass" required="" placeholder="Enter your password..." style="width: 300px; padding: 5px; border-radius: 20px; border-color: #0f6674;"></td>
+			</tr>
+            <tr style="height: 15px;"></tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="login" class="btn-primary" style="width: 150px; padding: 5px; border-radius: 10px; border-color: #1e7e34; "></td>
+			</tr>
+		</table>
+	</form>
+</center>
+<div>
+    {% if msg %}
+<script>
+    alert("username or password is incorrect...")
+</script>
+    {% endif %}
+</div>
+</body>
+</html>
+{% endblock %}

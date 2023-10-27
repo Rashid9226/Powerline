@@ -1,0 +1,53 @@
+{% extends 'temp/employee.html' %}
+{% block base %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employees view</title>
+    <style>
+		body {
+			background-color: #f8f8f8;
+			font-family: Arial, sans-serif;
+		}
+		table {
+			border: 2px solid #ccc;
+			width: 70%;
+			margin: auto;
+			margin-top: 20px;
+			background-color: #fff;
+		}
+		th {
+			height: 50px;
+			text-align: center;
+			background-color: #007bff;
+			color: #fff;
+		}
+		td {
+			padding: 10px;
+			text-align: center;
+			border-bottom: 1px solid #ccc;
+		}
+
+
+	</style>
+</head>
+<body><center>
+{#	<h2 style="font-family: 'Copperplate Gothic Bold'">View Work</h2>#}
+	<table border="2" class="table">
+		<tr class="btn-primary">
+			<th>Work</th>
+            <th>Status</th>
+		</tr>
+        {% for i in ew %}
+		<tr>
+			<td>{{ i.work }}</td>
+			<td><a href="/work/sts/{{ i.w_id }}"><button class="btn-success">COMPLETED</button></a></td>
+		</tr>
+        {% endfor %}
+	</table>
+</center>
+
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'temp/consumer.html' %}
+{% block base %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+     <style>
+		body {
+			background-color: #f8f8f8;
+			font-family: Arial, sans-serif;
+		}
+		table {
+			border: 2px solid #ccc;
+			width: 70%;
+			margin: auto;
+			margin-top: 20px;
+			background-color: #fff;
+		}
+		th {
+			height: 50px;
+			text-align: center;
+			background-color: #007bff;
+			color: #fff;
+		}
+		td {
+			padding: 10px;
+			text-align: center;
+			border-bottom: 1px solid #ccc;
+		}
+         h2 {
+			font-family: 'Copperplate Gothic Bold';
+			color: darkcyan;
+		}
+
+
+	</style>
+</head>
+<body><center>
+	<h2>View Reading</h2>
+	<table border="2" class="table">
+		<tr class="btn-primary">
+			<th>Reading</th>
+		</tr>
+        {% for i in img %}
+		<tr>
+			<td>{{ i.reading }}</td>
+		</tr>
+        {% endfor %}
+	</table>
+</center>
+
+</body>
+</html>
+{% endblock %}

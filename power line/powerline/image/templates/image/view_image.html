@@ -1,0 +1,65 @@
+{% extends 'temp/organisation.html' %}
+{% block base %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <style>
+		body {
+			font-family: 'Arial', sans-serif;
+			background-color: #f5f5f5;
+		}
+		h1 {
+			font-family: 'Copperplate Gothic Bold';
+			color: darkslategrey;
+		}
+		table {
+			border: 2px solid black;
+			width: 70%;
+			margin-top: 20px;
+			border-collapse: collapse;
+			background-color: white;
+		}
+		th {
+			background-color: #007bff;
+			color: white;
+			height: 50px;
+			text-align: center;
+		}
+		td {
+			font-family: 'Apple Color Emoji';
+			height: 50px;
+			text-align: center;
+		}
+		button {
+			width: 100px;
+			height: 30px;
+			border-radius: 10px;
+		}
+		.btn-primary {
+			background-color: #007bff;
+			color: white;
+		}
+	</style>
+</head>
+<body><center>
+{#	<h1>View Reading</h1>#}
+	<table border="2" class="table">
+		<tr class="btn-primary" align="center">
+			<th>Reading</th>
+            <th>Name</th>
+		</tr>
+        {% for i in img %}
+		<tr>
+			<td>{{ i.reading }}</td>
+        <td>{{ i.cons.name }}</td>
+
+		</tr>
+        {% endfor %}
+	</table>
+</center>
+
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends 'temp/consumer.html' %}
+{% block base %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment</title>
+    <style>
+        h2 {
+			font-family: 'Copperplate Gothic Bold';
+			color: darkcyan;
+		}
+    </style>
+</head>
+<body style="background-color: #f7f7f7; font-family: Arial, sans-serif;"><center>
+	<h2>Payment</h2>
+	<form method="post" style="border: 1px solid #ccc; padding: 20px; border-radius: 10px;">
+        {% csrf_token %}
+		<table>
+			<tr>
+				<td style="padding: 10px 20px 10px 0;">Bill Amount</td>
+				<td><input type="number" value="{{ a }}" readonly="" style="padding: 5px; border: 1px solid #ccc;"></td>
+			</tr>
+			<tr>
+				<td style="padding: 10px 20px 10px 0;">Payment method</td>
+				<td ><select name="pay" style="padding: 5px; border: 1px solid #ccc;" required>
+					<option value="online">--choose your method--</option>
+					<option value="paytm">paytm</option>
+					<option value="gpay">gpay</option>
+					<option value="Debit card">Debit Card</option>
+					<option value="net banking">Net Banking</option>
+					<option value=""></option>
+				</select></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td style="padding: 10px;"><input type="submit" value="PAY" class="btn-primary" style="padding: 10px; background-color: #428bca; color: #fff; border: none; border-radius: 5px;"></td>
+			</tr>
+
+		</table>
+		
+	</form>
+
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends 'temp/organisation.html' %}
+{% block base %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>connection</title>
+    <style>
+		body {
+			background-color: #f8f8f8;
+			font-family: Arial, sans-serif;
+		}
+		table {
+			border: 2px solid #ccc;
+			width: 70%;
+			margin: auto;
+			margin-top: 20px;
+			background-color: #fff;
+		}
+		th {
+			height: 50px;
+			text-align: center;
+			background-color: #007bff;
+			color: #fff;
+		}
+		td {
+			padding: 10px;
+			text-align: center;
+			border-bottom: 1px solid #ccc;
+		}
+		button {
+			width: 100px;
+			height: 30px;
+			border-radius: 10px;
+			cursor: pointer;
+			font-size: 14px;
+			font-weight: bold;
+			text-transform: uppercase;
+			border: none;
+			outline: none;
+			margin: 5px;
+		}
+		.btn-success {
+			background-color: #28a745;
+			color: #fff;
+		}
+		.btn-danger {
+			background-color: #dc3545;
+			color: #fff;
+		}
+
+	</style>
+</head>
+<body><center>
+{#	<h1>view connection</h1>#}
+	<table border="2" style="width: 70%;">
+		<tr class="btn-primary"style="height: 50px; text-align:center">
+			<th>Request</th>
+            <th colspan="2">Status</th>
+		</tr>
+        {% for i in b %}
+		<tr>
+			<td>{{ i.request}}</td>
+            <td><a href="/connection/ aaa/{{ i.conn_id}}"><button class="btn-success" style="width: 100px; height: 30px; border-radius: 10px;">approve</button></a></td>
+            <td><a href="/connection/ nnn/{{ i.conn_id }}"><button class="btn-danger" style="width: 100px; height: 30px; border-radius: 10px;">reject</button></a></td>
+		</tr>
+        {% endfor %}
+	</table>
+</center>
+</body>
+</html>
+{% endblock %}

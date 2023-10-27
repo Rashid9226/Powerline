@@ -1,0 +1,56 @@
+{% extends 'temp/consumer.html' %}
+{% block base %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Connection</title>
+    <style>
+        {#body {#}
+		{#	background-color: #f2f2f2;#}
+		{#}#}
+		h2 {
+			font-family: 'Copperplate Gothic Bold';
+			color: darkcyan;
+		}
+		{#form {#}
+		{#	background-color: white;#}
+		{#	width: 50%;#}
+		{#	padding: 20px;#}
+		{#	border-radius: 10px;#}
+		{#	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);#}
+		{#}#}
+    </style>
+</head>
+<body style="background-color: #f7f7f7; font-family: Arial, sans-serif;"><center>
+	<h2>Connection</h2><br>
+	<form method="post" style="border: 1px solid #ccc; padding: 20px; border-radius: 10px;">
+        {% csrf_token %}
+		<table>
+			<tr>
+				<td style="padding: 10px 20px 10px 0;">Request</td>
+{#				<td><input type="text" name="req" required=""></td>#}
+                <td><textarea name="req" required="" style="padding: 5px; border: 1px solid #ccc;"></textarea></td>
+
+			</tr>
+
+            <tr>
+                <td style="padding: 10px 20px 10px 0;">Organisation</td>
+                <td><select name="org" style="padding: 5px; border: 1px solid #ccc;" required>
+                    {% for i in x %}
+                    <option value="{{ i.o_id }}">{{ i.name }}</option>
+                    {% endfor %}
+                </select></td>
+            </tr>
+			
+			<tr>
+				<td></td>
+				<td><input type="submit" value="REQUEST" class="btn-success" style="padding: 10px; background-color: #428bca; color: #fff; border: none; border-radius: 5px;"></td>
+			</tr>
+		</table>
+		
+	</form>
+
+</body>
+</html>
+{% endblock %}

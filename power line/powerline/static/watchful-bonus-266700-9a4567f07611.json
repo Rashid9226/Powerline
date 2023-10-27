@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "watchful-bonus-266700",
+  "private_key_id": "9a4567f07611f22f6b06824ca25a24b95152e555",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC1lda4+C0h2LGo\nl76lGUbkUEpR7CHqfkS2xz1b64/9Yn42B2UsWtBHoA+2CgirTJI6CXZPrS3Evy74\nN+v1UdKT8eWJF+0mrVv5b8Gi7+mPAKodS8tIBc5VS5ixjOjOz1r6YWXaQG15Uu7d\n6C2+CCV7UUwqcaL4HrO/17tHq5v2k2HhT9P+3PGEq0d+PE5E4TxvN4vmd3CNXLNO\nB6PXtzpIP2b5JhXzF7wsldnLuT2krvTjI5eotWUlLQTfm/4w1h/UWKC5fXIAvC3s\nHqqWV4vDT2XlfrggE0MVARe2BwVNja04Tq4Xp7z4UCtvIRQHnnc9BClgWLdAUUVa\nG80Y/1ENAgMBAAECggEAALtoGvbje9/qg0HdGP85HkN9qoizSqI8lW7+KO49m/3I\ng5OrfJxfiZ1SHzl4uj8J0U9GA/9kB4Gf09oPCbJz86P8ciZuGBkd/u+GFYsru8J9\nJ8wk/L+qo1SapRHPufMl6NlTzSQCnpb0IcIV0lXRr+ki3a7+jU2LaVimDD5joZhA\nAa9/VMdugdLMDuykSiAC3MDvMP5e6wbCgA3GeLX2sNjH+MEXWdbR1B7yFVKz0ckP\nIpt3eYV6abU9Kzs8sNIvheWr+nAA2G7cMIvi+O3ZK7WQu/m2HCj/eBrfVFuJ2GIk\nDZeEHQBkxLYnOGyz3iyCswVTV5yDcBHQHCW3UsV31QKBgQD4auYmKTcFBTxkXDkm\n5miGYF1+PzHyCvSIo7vIZ9vbhxo7Skc8GUdXtbS0xnmutz+H5O993SpM1AvdQ8bZ\nwt9iOR9boj2WkZHHdO+mm4CwHT7rlu34iN1Su0pWXo0M7fIvlhvjVR1BYtkjVXqL\nUhUG9BGgS9goEYSiBrFk1VY+iwKBgQC7ILi26Ma/+3+Ns7Qbs4Q1UACNaFntVlpi\nhNZEv1ccGas1fBQzJejAMkBawxSMMCaX8J2NyvnEVEab0t9OmNBjXzOl7jVFg08z\n4hvqqghM/zG6rI3/tV+0NEeKDyhLmUj8KeREHtOLMrOx+1eClq4mQabmrqW7EqKv\nT7ntZ895xwKBgQC4+tkQN4aJzYFP9kB0kAPrdByKYsJtSu0WRl4ReA0GJk9JMSFk\nRiqSzHKYXmbDzB6ZsccIQUU7WnbPN6X+B5dRy9lm4aPc197m2FOQC6FDAzQUOBpS\nBJBSB7buI5ACvbim6K8xk/Kp+tJX9lG/JssTl3D8nR2DkK/j+vnjbNzAywKBgCeT\nD/1+1Smc4qjxLFH/cSJlPPiq7PnInWzgcwAvBxkmRJMXHp6CkeqztfB7+Uh8lmzj\nsi5ektv2hshFnHxezRN2+tFIw3NkBcgPNaA3PXIrNjUocQ93KDpQJCEKe5chX9IU\nefX+Hvb9TguCAEvZ2hK1J7r5jIs3sbgpwER5A+PZAoGAN1m3IaoEdXamZaQzX0at\nd2LPjT6socvfpMedC5ER6wKps57rymDzmWE5kkbaMXSOEWKQ+6CdIma1FrcRr1Jv\nqubuf1Sy+23bKNJmn2E+XJvRZeBNpUJukxnn20qTr0lhdZDZxeNFcTvwdvE6DgrG\nIldLWe/0PJbRu907MVvY6no=\n-----END PRIVATE KEY-----\n",
+  "client_email": "bg2020@watchful-bonus-266700.iam.gserviceaccount.com",
+  "client_id": "110644142572744330730",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bg2020%40watchful-bonus-266700.iam.gserviceaccount.com"
+}

@@ -1,0 +1,58 @@
+{% extends 'temp/admin.html' %}
+{% block base %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Complaint</title>
+    <style>
+		body {
+			background-color: #f8f8f8;
+			font-family: Arial, sans-serif;
+		}
+		table {
+			border: 2px solid #ccc;
+			width: 70%;
+			margin: auto;
+			margin-top: 20px;
+			background-color: #fff;
+		}
+		th {
+			height: 50px;
+			text-align: center;
+			background-color: #007bff;
+			color: #fff;
+		}
+		td {
+			padding: 10px;
+			text-align: center;
+			border-bottom: 1px solid #ccc;
+		}
+
+
+	</style>
+</head>
+<body><center>
+{#	<h1 style="font-family: 'Copperplate Gothic Bold';color: darkslategrey;">View complaint</h1><br>#}
+	<table border="2" style="width: 70%;">
+		<tr  class="btn-primary"style="height: 50px; text-align: center">
+			<th>User</th>
+			<th>Complaint</th>
+            <th>Organization</th>
+
+		</tr>
+        {% for i in j %}
+		<tr style="font-family: 'Apple Color Emoji';height: 50px; text-align: center">
+			<td>{{ i.cons.name }}</td>
+			<td>{{ i.complaint }}</td>
+            <td>{{ i.o.name }}</td>
+{#			<td><a href="/complaints/www/?idd={{ i.comp_id }}">reply</a></td>#}
+{#            <td><a href="/complaints/www/{{ i.comp_id }}">reply</a></td>#}
+		</tr>
+        {% endfor %}
+	</table>
+</center>
+
+</body>
+</html>
+{% endblock %}
